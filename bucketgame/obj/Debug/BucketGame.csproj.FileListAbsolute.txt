@@ -163,3 +163,6 @@ C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\MainWindow.baml
 C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.g.resources
 C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
 C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Kinect\SecondGame\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.exe
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.pdb

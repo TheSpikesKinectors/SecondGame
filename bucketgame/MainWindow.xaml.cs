@@ -86,7 +86,7 @@ namespace BucketGame
                 Canvas.SetTop(it, y);
 
                 //the variable x changes so each target will be located just in the right place.
-                x += Consts.DistanceBetweenPortals;
+                x += Consts.DistanceBetweenTargets;
                 
             }//Yay, we were done with initializing the targets!! that wasn't so hard, now, wasn't it?
 

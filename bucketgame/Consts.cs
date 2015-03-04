@@ -18,11 +18,35 @@ namespace BucketGame
 {
     class Consts
     {
-        public static readonly int ShapeRadius = 50, TouchingDistance = 55, NumberOfTargets = 3,
-            FrameWidth = 640, FrameHeight = 480, PortalSize = 100,
-            DistanceBetweenPortals = 200;
+        /// <summary>
+        /// The minimal distance between two object so they would be considered "touching".
+        /// </summary>
+        public static readonly int TouchingDistance = 55;
+
+        /// <summary>
+        /// The width (in pixels) of a frame sent by the Kinect sensor.
+        /// </summary>
+        public static readonly int FrameWidth = 640;
         
-        public static readonly double FairDistance = 130, GoodLinePercision = 0;
+        /// <summary>
+        /// The height (in pixels) of a frame sent by the Kinect sensor.
+        /// </summary>
+        public static readonly int FrameHeight = 640;
+
+
+        /// <summary>
+        /// The distance between the left-top-corners of targets.
+        /// </summary>
+        public static readonly int DistanceBetweenTargets = 200;
+        
+        /// <summary>
+        /// The minimal distance between two objects that is consider "fair", that is, minimal and yet long enough.
+        /// </summary>
+        public static readonly double FairDistance = 130;
+        
+        /// <summary>
+        /// The amount of points that scoring is worth
+        /// </summary>
         public static readonly int ScorePerShape = 100;
         public static readonly long TicksPerMilisecond = 10000, GameStartingTime = 120000;
         public static readonly JointType[] DefaultJoints = { JointType.HandRight, JointType.HandLeft },
