@@ -1,0 +1,165 @@
+c:\users\alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\BucketGame.exe.config
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\BucketGame.exe
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\BucketGame.pdb
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\App.g.cs
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.g.resources
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.exe
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\BucketGame.pdb
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.dll
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\MainWindow.baml
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\MainWindow.g.cs
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\Bucket.baml
+C:\Users\Alon\documents\visual studio 2013\Projects\Spikes\BucketGame\obj\Debug\Bucket.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.dll
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\Bucket.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\Bucket.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\App.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\Status.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\bucketgame\obj\Debug\Status.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\Bucket.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\Status.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\Bucket.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\Status.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\App.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\JointSelection.baml
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Users\SAPIR 7\Documents\Visual Studio 2013\Projects\תיקיה חדשה\bucketgame\obj\Debug\App.baml
+C:\Users\user\Desktop\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\bucketgame\obj\Debug\Bucket.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\JointSelection.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\Status.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\App.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\Bucket.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\Status.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\App.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\user\Desktop\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\user\Desktop\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\user\Desktop\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\user\Desktop\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\user\Desktop\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\user\Desktop\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\bucketgame\obj\Debug\ImageObject.baml
+C:\Users\user\Desktop\bucketgame\obj\Debug\ImageObject.g.cs
+C:\Users\user\Desktop\bucketgame\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\Bucket.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\JointSelection.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\Status.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\ImageObject.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\App.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\Bucket.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\Status.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\ImageObject.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\App.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\SAPIR 7\Desktop\לניסוי 2\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\JointSelection.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\Status.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\ImageObject.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\App.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\Status.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\ImageObject.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\App.g.cs
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\SAPIR 7\Desktop\לניסוי 3\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
+C:\Users\SAPIR 7\Desktop\אחרי ריפרקטורינג\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Desktop\אחרי ריפרקטורינג\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\אחרי ריפרקטורינג\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\bin\Debug\BucketGame.exe.config
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\bin\Debug\BucketGame.exe
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\bin\Debug\BucketGame.pdb
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\JointSelection.baml
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\Status.baml
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\ImageObject.baml
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\App.baml
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\Status.g.cs
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\ImageObject.g.cs
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\App.g.cs
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\MainWindow.baml
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache
