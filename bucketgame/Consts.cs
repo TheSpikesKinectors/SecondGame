@@ -48,20 +48,67 @@ namespace BucketGame
         /// The amount of points that scoring is worth
         /// </summary>
         public static readonly int ScorePerShape = 100;
-        public static readonly long TicksPerMilisecond = 10000, GameStartingTime = 120000;
-        public static readonly JointType[] DefaultJoints = { JointType.HandRight, JointType.HandLeft },
-            ReasonableJoints = {JointType.HandLeft, JointType.HandRight, JointType.ElbowLeft, JointType.ElbowRight};
+
+        /// <summary>
+        /// The amount of "Ticks" in a millisecond.
+        /// </summary>
+        public static readonly long TicksPerMilisecond = 10000;
+
+        /// <summary>
+        /// The joints to be selected by default on the JointSelection window
+        /// </summary>
+        public static readonly JointType[] DefaultJoints = { JointType.HandRight, JointType.HandLeft };
+
+        /// <summary>
+        /// the joints that will be offered by the JointSelection window
+        /// </summary>
+        public static readonly JointType[] ReasonableJoints = { JointType.HandLeft, JointType.HandRight, JointType.ElbowLeft, JointType.ElbowRight };
+       
+        /// <summary>
+        /// The amount of score that once recieved, the game is won
+        /// </summary>
         public static readonly int WantedScore = 10*ScorePerShape;
+
+        /// <summary>
+        /// The relative path of the candy image
+        /// </summary>
         public static readonly string RelativeCandy = "imgs\\candy.gif";
+
+        /// <summary>
+        /// The relative path of the chocolate image
+        /// </summary>
         public static readonly string RelativeChocolate = "imgs\\chocolate.png";
+
+        /// <summary>
+        /// The relative path of the balloon image
+        /// </summary>
         public static readonly string RelativeBalloon = "imgs\\balloon.png";
-        
+
+        /// <summary>
+        /// The relative path of the candy bag image
+        /// </summary>
         public static readonly string RelativeCandyBag = "imgs\\candyBag.png";
+
+        /// <summary>
+        /// The relative path of the chocolate bag image
+        /// </summary>
         public static readonly string RelativeChocolateBag = "imgs\\chocolateBag.png";
+
+        /// <summary>
+        /// The relative path of the balloon bag image
+        /// </summary>
         public static readonly string RelativeBalloonBag = "imgs\\balloonBag.png";
 
         //IT IS VERY IMPORTANT FOR TWO ARRAYS BELOW TO BE IN THE SAME ORDER
+
+        /// <summary>
+        /// The paths, by order, of the objects images in the game
+        /// </summary>
         public static readonly string[] ImageObjectPaths = { RelativeBalloon, RelativeCandy, RelativeChocolate };
+
+        /// <summary>
+        /// The paths, by order, of the bags images in the game
+        /// </summary>
         public static readonly string[] BagPaths = { RelativeBalloonBag, RelativeCandyBag, RelativeChocolateBag };
               
     }
