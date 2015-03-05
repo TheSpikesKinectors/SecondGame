@@ -74,13 +74,18 @@ namespace BucketGame
         }
 
 
-        
+        /// <summary>
+        /// 
+        /// </summary>
         public Status()
         {
             InitializeComponent();
             Left = 700;
         }
 
+        /// <summary>
+        /// The content of the Extra label in the window
+        /// </summary>
         public string ExtraInfo
         {
             get { return LabelNothing.Content.ToString(); }
