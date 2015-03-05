@@ -45,6 +45,9 @@ namespace BucketGame
             }
         }
 
+        /// <summary>
+        /// The absolute path of the image
+        /// </summary>
         public string AbsolutePath
         {
             set
