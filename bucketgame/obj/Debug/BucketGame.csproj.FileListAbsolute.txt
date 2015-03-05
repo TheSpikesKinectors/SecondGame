@@ -166,3 +166,15 @@ C:\Users\SAPIR 7\Desktop\BucketGame\bucketgame\obj\Debug\BucketGame.csproj.Gener
 C:\Kinect\SecondGame\bucketgame\bin\Debug\BucketGame.exe.config
 C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.exe
 C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.pdb
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.csprojResolveAssemblyReference.cache
+C:\Kinect\SecondGame\bucketgame\obj\Debug\JointSelection.baml
+C:\Kinect\SecondGame\bucketgame\obj\Debug\Status.baml
+C:\Kinect\SecondGame\bucketgame\obj\Debug\ImageObject.baml
+C:\Kinect\SecondGame\bucketgame\obj\Debug\App.baml
+C:\Kinect\SecondGame\bucketgame\obj\Debug\JointSelection.g.cs
+C:\Kinect\SecondGame\bucketgame\obj\Debug\MainWindow.g.cs
+C:\Kinect\SecondGame\bucketgame\obj\Debug\Status.g.cs
+C:\Kinect\SecondGame\bucketgame\obj\Debug\ImageObject.g.cs
+C:\Kinect\SecondGame\bucketgame\obj\Debug\App.g.cs
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref

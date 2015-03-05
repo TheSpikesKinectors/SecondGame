@@ -16,27 +16,43 @@ using System.Windows.Shapes;
 namespace BucketGame
 {
     /// <summary>
-    /// Interaction logic for test.xaml
+    /// This object lets you place an image on the screen with ease.
     /// </summary>
     public partial class ImageObject : UserControl
     {
+        /// <summary>
+        /// Creates an ImageObject by a relative path to the image and its dimensions
+        /// </summary>
+        /// <param name="relativePath">the relative path to the image</param>
+        /// <param name="width">the width of the ImageObject wanted</param>
+        /// <param name="height">the height of the ImageObject wanted</param>
         public ImageObject(String relativePath, int width, int height)
         {
             InitializeComponent();
-            SetRelativeSource(relativePath);
+            RelativePath = relativePath;
             grid.Width = width;
             grid.Height = height;
         }
 
-        public void SetRelativeSource(String RelativePath)
+        /// <summary>
+        /// The relative path of the image
+        /// </summary>
+        public string RelativePath
         {
-            image.Source = new BitmapImage(new Uri(RelativePath, UriKind.Relative));
+            set
+            {
+                image.Source = new BitmapImage(new Uri(value, UriKind.Relative));
+            }
         }
 
-        public void SetAbsoluteSource(String AbsolutePath)
+        public string AbsolutePath
         {
-            image.Source = new BitmapImage(new Uri(AbsolutePath, UriKind.Absolute));
+            set
+            {
+                image.Source = new BitmapImage(new Uri(value, UriKind.Absolute));
+            }
         }
+
 
     }
 }

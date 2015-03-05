@@ -313,7 +313,7 @@ namespace BucketGame
             }
             else
             {
-                currentTarget.SetRelativeSource(Consts.ImageObjectPaths[current]);
+                currentTarget.RelativePath = Consts.ImageObjectPaths[current];
             }
 
             //set the currentTarget
