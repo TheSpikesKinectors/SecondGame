@@ -237,5 +237,20 @@ namespace BucketGame
             Canvas.SetLeft(elem, point.X);
             Canvas.SetTop(elem, point.Y);
         }
+
+        /// <summary>
+        /// Makes the media player open the file given by its relative path
+        /// </summary>
+        /// <param name="mediaPlayer">the media player that should open the file</param>
+        /// <param name="relativePath">the relative path of the file</param>
+        public static void OpenFromRelativePath(this MediaPlayer mediaPlayer, string relativePath)
+        {
+            if (!relativePath.StartsWith("../../"))
+            {
+                relativePath = "../../" + relativePath;
+            }
+            mediaPlayer.Open((new Uri(relativePath, UriKind.Relative)));
+            //if doesn't work, try adding @ before relativePath in this line ^
+        }
     }
 }
