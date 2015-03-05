@@ -20,6 +20,10 @@ namespace BucketGame
     public partial class Status : Window
     {
         private int score;
+        
+        /// <summary>
+        /// The score saved and showed on the screen
+        /// </summary>
         public int Score
         {
             get
@@ -34,6 +38,10 @@ namespace BucketGame
         }
 
         public long TimeStarted;
+
+        /// <summary>
+        /// The time that elapsed in MS
+        /// </summary>
         public long TimeElapsedMS
         {
             get
@@ -41,6 +49,10 @@ namespace BucketGame
                 return (DateTime.Now.Ticks - TimeStarted) / Consts.TicksPerMilisecond;
             }
         }
+
+        /// <summary>
+        /// The time that elapsed as a string
+        /// </summary>
         public string TimeString
         {
             get
@@ -53,11 +65,16 @@ namespace BucketGame
             }
         }
 
+        /// <summary>
+        /// Updates the label showing the current time
+        /// </summary>
         public void UpdateCurrentTime()
         {
             LabelTime.Content = "Time: " + TimeString;
         }
 
+
+        
         public Status()
         {
             InitializeComponent();
@@ -70,6 +87,10 @@ namespace BucketGame
             set { LabelNothing.Content = value; }
         }
 
+
+        /// <summary>
+        /// The joint shown by the window
+        /// </summary>
         public JointType Joint
         {
             set
