@@ -55,7 +55,7 @@ namespace BucketGame
         /// <returns>a random point at the top half of the frame from the Kinect sensor</returns>
         public static Point RandomPointAtTopHalfOfScreen(Random random)
         {
-            return new Point(random.Next(Consts.PortalSize,Consts.FrameWidth-Consts.PortalSize), random.Next(0,Consts.FrameHeight / 2));
+            return new Point(random.Next(Consts.TargetSize/2,Consts.FrameWidth-Consts.TargetSize/2), random.Next(0,Consts.FrameHeight / 2));
         }
        
         /// <summary>
@@ -117,7 +117,7 @@ namespace BucketGame
         /// <returns>the coordinates of the top left corner of the object</returns>
         public static Point FromCenterPointToTopLeftPoint(Point centerPoint)
         {
-            return new Point(centerPoint.X - Consts.ShapeRadius, centerPoint.Y - Consts.ShapeRadius);
+            return new Point(centerPoint.X - Consts.TargetSize/2, centerPoint.Y - Consts.TargetSize/2);
         }
 
         /// <summary>
@@ -230,6 +230,12 @@ namespace BucketGame
         public static T ChooseRandom<T>(this List<T> list, Random rand)
         {
             return list[rand.Next(list.Count)];
+        }
+
+        public static void MoveTo(this UIElement elem, Point point) //moves the given UIElement to the given point
+        {
+            Canvas.SetLeft(elem, point.X);
+            Canvas.SetTop(elem, point.Y);
         }
     }
 }

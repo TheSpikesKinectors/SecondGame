@@ -23,21 +23,68 @@ namespace BucketGame
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        ImageObject imageObject;
-
+   
+        /// <summary>
+        /// this variable determines whether not the game is being played right now;
+        /// its value will be true when the game is being played, and false when the game is stopped.
+        /// </summary>
         bool currentlyPlaying = false;
-        JointSelection jointSelectionWindow;
-        JointType currentlyUsedJoint = JointType.HandRight;
-        KinectSensor sensor;
-        Status statusWindow;
-        Skeleton skeleton;
-        static Random random = new Random();
-        bool HasTouchedObject = false;
-        ImageObject[] Targets = new ImageObject[Consts.BagPaths.Length];
-        ImageObject CurrentTarget;
 
-        //this variable is used by the 
+        /// <summary>
+        /// The window through which the joints to be used are selected.
+        /// </summary>
+        JointSelection jointSelectionWindow;
+
+        /// <summary>
+        /// the joint that is current used. That is, the joint which the player needs to use.
+        /// </summary>
+        JointType currentlyUsedJoint = JointType.HandRight;
+
+        /// <summary>
+        /// The Kinect
+        /// </summary>
+        KinectSensor sensor;
+
+        /// <summary>
+        /// The status window that contains data and lets the player optimize things
+        /// </summary>
+        Status statusWindow;
+
+        /// <summary>
+        /// The skeleton of the player in front of the Kinect
+        /// </summary>
+        Skeleton skeleton;
+
+        /// <summary>
+        /// The randomizator object
+        /// </summary>
+        static Random random = new Random();
+
+        /// <summary>
+        /// this variable determines whether not the player touched the current object.
+        /// Its value will be false when the player hasn't yet touched the object, and therefore touching
+        /// it will be the next action the player needs to do,
+        /// and true when it already touched it, meaning that the object should stick to the player's
+        /// currently used joint, and that the player's next action should be placing the object in the target.
+        /// </summary>
+        bool hasTouchedObject = false;
+
+        /// <summary>
+        /// The array of all the targets that are on screen
+        /// </summary>
+        ImageObject[] targets = new ImageObject[Consts.BagPaths.Length];
+
+        /// <summary>
+        /// This variable will be a reference to the target that should be used right now, that is also
+        /// one of the element of the targets array.
+        /// </summary>
+        ImageObject currentTarget;
+
+        /// <summary>
+        /// this variable is used by the CreateNextImage method to determine if the method was called
+        /// because the game just started (in such case, its value will be true), or because the player
+        /// scored (in such case, its value will be false). 
+        /// </summary>
         bool firstTime = true;
         public MainWindow()
         {
@@ -62,17 +109,17 @@ namespace BucketGame
             }
 
             //the following loop initializes and locates the targets on the screen.
-            int x = 25 , y = Consts.FrameHeight - Consts.PortalSize * 2;
+            int x = 25 , y = Consts.FrameHeight - Consts.TargetSize; //this magic number should change soon to be a const
             for (int i = 0; i < Consts.ImageObjectPaths.Length; i++) //iterate over Consts.ImageObejctPaths,
                                                                 //wchich is an array of the local paths of the
                                                                 //images of the targets.
             {
                 //iteratively initialize the Targets array
-                Targets[i] = new ImageObject(Consts.BagPaths[i], Consts.PortalSize * 2, Consts.PortalSize * 2);
+                targets[i] = new ImageObject(Consts.BagPaths[i], Consts.TargetSize, Consts.TargetSize);
                 
                 //this is just a reference for conviniece. Everytime in this loop when there is an "it"
                 // (short for iterated), it is equivalent to writing Targets[i]
-                ImageObject it = Targets[i];
+                ImageObject it = targets[i];
 
                 //just alignment stuff
                 it.HorizontalAlignment = HorizontalAlignment.Left;
@@ -93,7 +140,7 @@ namespace BucketGame
 
 
             //let the CurrentTarget be the first target, though, this line isn't very significant
-            CurrentTarget = Targets[0];
+            currentTarget = targets[0];
             
             //ENABLE!
             sensor.ColorStream.Enable();
@@ -109,11 +156,7 @@ namespace BucketGame
 
 
 
-        public static void MoveTo(UIElement elem, Point point) //moves the given UIElement to the given point
-        {
-            Canvas.SetLeft(elem, point.X);
-            Canvas.SetTop(elem, point.Y);   
-        }
+       
         
 
         //this method is called whenever we get all frames from the sensor (color, depth and skeleton frame) - 
@@ -188,15 +231,15 @@ namespace BucketGame
                         Point locationOfCurrentJoint = Util.GetPoint(skeleton, currentlyUsedJoint, depthImageFrame);
 
                         //distance of the player's joint from the target
-                        double distance = Util.Distance(locationOfCurrentJoint, new Point(Canvas.GetLeft(imageObject),Canvas.GetTop(imageObject)));
+                        double distance = Util.Distance(locationOfCurrentJoint, new Point(Canvas.GetLeft(currentTarget),Canvas.GetTop(currentTarget)));
 
-                        if (HasTouchedObject) //if the player already touched the object...
+                        if (hasTouchedObject) //if the player already touched the object...
                         {
                             //move the object to the player's joint
-                            MoveTo(imageObject, locationOfCurrentJoint);
+                            currentTarget.MoveTo(locationOfCurrentJoint);
                             
                             //this will be the location of the target
-                            Point targetLocation = new Point(Canvas.GetLeft(CurrentTarget) + Consts.PortalSize, Canvas.GetTop(CurrentTarget) + Consts.PortalSize);
+                            Point targetLocation = new Point(Canvas.GetLeft(currentTarget) + Consts.TargetSize, Canvas.GetTop(currentTarget) + Consts.TargetSize);
                             
                             //this will be the player's joint's distance from the target
                             double distanceFromTarget = Util.Distance(targetLocation, Util.ToPoint(locationOfCurrentJoint));
@@ -204,16 +247,16 @@ namespace BucketGame
                             //if we basically touched the target - then...
                             if (distanceFromTarget <= Consts.TouchingDistance)
                             {
-                                HasTouchedObject = false;
+                                hasTouchedObject = false;
                                 CreateNextImage(locationOfCurrentJoint);
                             }
                             
                         }
 
                         //if we haven't touched the target, but now we just firsly did, then..
-                        else if (distance <= Consts.ShapeRadius)
+                        else if (distance <= Consts.TouchingDistance)
                         {
-                            HasTouchedObject = true;
+                            hasTouchedObject = true;
                         }
                         
                     }
@@ -263,24 +306,24 @@ namespace BucketGame
             Point p = Util.RandomPointAtTopHalfOfScreen(random);
 
             //omer, I don't get it. please comment this for us.
-            if (imageObject == null)
+            if (currentTarget == null)
             {
-                imageObject = new ImageObject(Consts.ImageObjectPaths[current], 2 * Consts.ShapeRadius, 2 * Consts.ShapeRadius);
-                targetsCanvas.Children.Add(imageObject);
+                currentTarget = new ImageObject(Consts.ImageObjectPaths[current], Consts.TargetSize, Consts.TargetSize);
+                targetsCanvas.Children.Add(currentTarget);
             }
             else
             {
-                imageObject.SetRelativeSource(Consts.ImageObjectPaths[current]);
+                currentTarget.SetRelativeSource(Consts.ImageObjectPaths[current]);
             }
 
             //set the currentTarget
-            CurrentTarget = Targets[current]; //current-target-target-current. does this count as a palindrome?
+            currentTarget = targets[current]; //current-target-target-current. does this count as a palindrome?
 
             //Move the imageObejct to this point
-            MoveTo(imageObject, p);
+            currentTarget.MoveTo(p);
 
             //we haven't touched THIS new object yet...
-            HasTouchedObject = false;
+            hasTouchedObject = false;
             
             //change the joint used, randomly, then update the status window.
             ChangeJoint();

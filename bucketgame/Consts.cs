@@ -110,6 +110,10 @@ namespace BucketGame
         /// The paths, by order, of the bags images in the game
         /// </summary>
         public static readonly string[] BagPaths = { RelativeBalloonBag, RelativeCandyBag, RelativeChocolateBag };
-              
+
+        /// <summary>
+        /// The size of the targets (across)
+        /// </summary>
+        public static readonly  int  TargetSize = 100;
     }
 }
