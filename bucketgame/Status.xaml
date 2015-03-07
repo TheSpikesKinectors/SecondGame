@@ -5,9 +5,11 @@
     <Grid  >
         <Label Content="Time: 00:00.00" x:Name="LabelTime" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="264"/>
         <Label Content="Score: 0" x:Name="LabelScore" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,63,0,0" VerticalAlignment="Top" Width="264"/>
-        <Label Content="" x:Name="LabelNothing" Foreground="Gray" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,353,0,0" VerticalAlignment="Top" Width="328"/>
+        <Label Content="" x:Name="LabelNothing" Foreground="Gray" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,502,0,0" VerticalAlignment="Top" Width="418"/>
         <Label Content="Use " x:Name="LabelJoint" HorizontalAlignment="Left" FontSize="50" Foreground="Red" Height="78" Margin="10,121,0,0" VerticalAlignment="Top" Width="328"/>
         <CheckBox x:FieldModifier="public" x:Name="checkboxShowOnlyWantedTarget"  FontSize="30" Content="הצג רק את המטרה הרצויה" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top" Height="46" Width="418"/>
+        <Label x:Name="labelTouchingDistance" Content="מרחק מינימלי לנגיעה" FontSize="25" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top" Height="74" Width="418"/>
+        <Slider x:Name="sliderTouchingDistance" ValueChanged="sliderTouchingDistance_ValueChanged" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" Width="418" Minimum="30" Maximum="70" TickFrequency="5" IsSnapToTickEnabled="True"/>
 
     </Grid>
 </Window>

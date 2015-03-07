@@ -115,5 +115,19 @@ namespace BucketGame
             }
         }
 
+
+        private void sliderTouchingDistance_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            labelTouchingDistance.Content = "מרחק מינימלי לנגיעה: " + sliderTouchingDistance.Value;
+        }
+
+        public double TouchingDistance
+        {
+            get
+            {
+                return sliderTouchingDistance.Value;
+            }
+        }
+
     }
 }

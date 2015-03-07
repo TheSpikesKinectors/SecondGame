@@ -281,7 +281,7 @@ namespace BucketGame
                             statusWindow.ExtraInfo = distanceFromTarget.ToString();
 
                             //if we basically touched the target - then...
-                            if (distanceFromTarget <= Consts.TouchingDistance)
+                            if (distanceFromTarget <= statusWindow.TouchingDistance)
                             {
                                 hasTouchedObject = false;
                                 CreateNextImage(locationOfCurrentJoint);
@@ -290,7 +290,7 @@ namespace BucketGame
                         }
 
                         //if we haven't touched the target, but now we just firsly did, then..
-                        else if (distance <= Consts.TouchingDistance)
+                        else if (distance <= statusWindow.TouchingDistance)
                         {
                             hasTouchedObject = true;
                         }
