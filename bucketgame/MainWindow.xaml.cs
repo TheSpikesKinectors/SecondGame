@@ -23,7 +23,9 @@ namespace BucketGame
     /// </summary>
     public partial class MainWindow : Window
     {
-   
+
+        ImageObject imageObject;
+
         /// <summary>
         /// this variable determines whether not the game is being played right now;
         /// its value will be true when the game is being played, and false when the game is stopped.
@@ -109,13 +111,13 @@ namespace BucketGame
             }
 
             //the following loop initializes and locates the targets on the screen.
-            int x = 25 , y = Consts.FrameHeight - Consts.TargetSize; //this magic number should change soon to be a const
+            int x = 25 , y = Consts.FrameHeight - Consts.TargetDiameter; 
             for (int i = 0; i < Consts.ImageObjectPaths.Length; i++) //iterate over Consts.ImageObejctPaths,
                                                                 //wchich is an array of the local paths of the
                                                                 //images of the targets.
             {
                 //iteratively initialize the Targets array
-                targets[i] = new ImageObject(Consts.BagPaths[i], Consts.TargetSize, Consts.TargetSize);
+                targets[i] = new ImageObject(Consts.BagPaths[i], Consts.TargetDiameter, Consts.TargetDiameter);
                 
                 //this is just a reference for conviniece. Everytime in this loop when there is an "it"
                 // (short for iterated), it is equivalent to writing Targets[i]
@@ -184,7 +186,7 @@ namespace BucketGame
                 {
                     if (colorFrame != null)
                     {
-                        Util.DrawOnImage(colorFrame, frame); //draw the image from the sensor on our Image object
+                        Util.DrawOnImage(colorFrame, frame); //draw the image from the sensor on our Image
                     }
                 }
 
@@ -231,19 +233,21 @@ namespace BucketGame
                         Point locationOfCurrentJoint = Util.GetPoint(skeleton, currentlyUsedJoint, depthImageFrame);
 
                         //distance of the player's joint from the target
-                        double distance = Util.Distance(locationOfCurrentJoint, new Point(Canvas.GetLeft(currentTarget),Canvas.GetTop(currentTarget)));
-
+                        double distance = Util.Distance(locationOfCurrentJoint, new Point(Canvas.GetLeft(imageObject),Canvas.GetTop(imageObject)));
+                        
                         if (hasTouchedObject) //if the player already touched the object...
                         {
                             //move the object to the player's joint
-                            currentTarget.MoveTo(locationOfCurrentJoint);
+                            imageObject.MoveTo(locationOfCurrentJoint);
                             
                             //this will be the location of the target
-                            Point targetLocation = new Point(Canvas.GetLeft(currentTarget) + Consts.TargetSize, Canvas.GetTop(currentTarget) + Consts.TargetSize);
+                            Point targetLocation = new Point(Canvas.GetLeft(currentTarget) + Consts.TargetDiameter/2, Canvas.GetTop(currentTarget) + Consts.TargetDiameter/2);
                             
                             //this will be the player's joint's distance from the target
                             double distanceFromTarget = Util.Distance(targetLocation, Util.ToPoint(locationOfCurrentJoint));
-                            
+
+                            statusWindow.ExtraInfo = distanceFromTarget.ToString();
+
                             //if we basically touched the target - then...
                             if (distanceFromTarget <= Consts.TouchingDistance)
                             {
@@ -301,26 +305,38 @@ namespace BucketGame
             //current willl be the index of the next target.
             int current = random.Next(0, Consts.ImageObjectPaths.Length);
 
+            if (imageObject == null)
+            {
+                imageObject = new ImageObject(Consts.ImageObjectPaths[current],  Consts.ObjectDiameter, Consts.ObjectDiameter);
+                targetsCanvas.Children.Add(imageObject);
+                
+            }
+            else
+            {
+                imageObject.RelativePath = (Consts.ImageObjectPaths[current]);
+            }
+            
+
             //choose a random point at the top half of the screen
             //(the top half - because we don't want it to be too close to the targets)
             Point p = Util.RandomPointAtTopHalfOfScreen(random);
 
-            //omer, I don't get it. please comment this for us.
-            if (currentTarget == null)
+            
+            if (imageObject == null)
             {
-                currentTarget = new ImageObject(Consts.ImageObjectPaths[current], Consts.TargetSize, Consts.TargetSize);
+                imageObject = new ImageObject(Consts.ImageObjectPaths[current], Consts.ObjectDiameter, Consts.ObjectDiameter);
                 targetsCanvas.Children.Add(currentTarget);
             }
             else
             {
-                currentTarget.RelativePath = Consts.ImageObjectPaths[current];
+                imageObject.RelativePath = Consts.ImageObjectPaths[current];
             }
 
             //set the currentTarget
             currentTarget = targets[current]; //current-target-target-current. does this count as a palindrome?
 
             //Move the imageObejct to this point
-            currentTarget.MoveTo(p);
+            imageObject.MoveTo(p);
 
             //we haven't touched THIS new object yet...
             hasTouchedObject = false;

@@ -1,12 +1,12 @@
 ﻿<Window x:Class="BucketGame.Status"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Status" Height="332" Width="292">
-    <Grid>
+        Title="Status" Height="442.448" Width="350.209">
+    <Grid Margin="0,0,-21,-20">
         <Label Content="Time: 00:00.00" x:Name="LabelTime" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="264"/>
         <Label Content="Score: 0" x:Name="LabelScore" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,63,0,0" VerticalAlignment="Top" Width="264"/>
-        <Label Content="" x:Name="LabelNothing" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,239,0,0" VerticalAlignment="Top" Width="264"/>
-        <Label Content="Use " x:Name="LabelJoint" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,121,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label Content="" x:Name="LabelNothing" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,369,0,0" VerticalAlignment="Top" Width="328"/>
+        <Label Content="Use " x:Name="LabelJoint" HorizontalAlignment="Left" FontSize="50" Foreground="Red" Height="78" Margin="10,121,0,0" VerticalAlignment="Top" Width="328"/>
 
     </Grid>
 </Window>

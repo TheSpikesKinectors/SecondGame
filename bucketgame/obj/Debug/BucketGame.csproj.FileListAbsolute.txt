@@ -178,3 +178,11 @@ C:\Kinect\SecondGame\bucketgame\obj\Debug\ImageObject.g.cs
 C:\Kinect\SecondGame\bucketgame\obj\Debug\App.g.cs
 C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.cache
 C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame_MarkupCompile.lref
+C:\Kinect\SecondGame\bucketgame\bin\Debug\BucketGame.exe
+C:\Kinect\SecondGame\bucketgame\bin\Debug\BucketGame.pdb
+C:\Kinect\SecondGame\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Kinect\SecondGame\bucketgame\bin\Debug\Microsoft.Kinect.Toolkit.Controls.pdb
+C:\Kinect\SecondGame\bucketgame\obj\Debug\MainWindow.baml
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.g.resources
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.Properties.Resources.resources
+C:\Kinect\SecondGame\bucketgame\obj\Debug\BucketGame.csproj.GenerateResource.Cache

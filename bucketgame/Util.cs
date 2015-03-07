@@ -55,7 +55,7 @@ namespace BucketGame
         /// <returns>a random point at the top half of the frame from the Kinect sensor</returns>
         public static Point RandomPointAtTopHalfOfScreen(Random random)
         {
-            return new Point(random.Next(Consts.TargetSize/2,Consts.FrameWidth-Consts.TargetSize/2), random.Next(0,Consts.FrameHeight / 2));
+            return new Point(random.Next(Consts.TargetDiameter/2,Consts.FrameWidth-Consts.TargetDiameter/2), random.Next(0,Consts.FrameHeight / 2));
         }
        
         /// <summary>
@@ -65,7 +65,6 @@ namespace BucketGame
         /// <param name="image">the image to draw the image on</param>
         public static void DrawOnImage(this ColorImageFrame colorFrame, Image image)
         {
-
             if (colorFrame == null || image == null)
             {
                 throw new ArgumentNullException("Value cannot be null");
@@ -117,7 +116,7 @@ namespace BucketGame
         /// <returns>the coordinates of the top left corner of the object</returns>
         public static Point FromCenterPointToTopLeftPoint(Point centerPoint)
         {
-            return new Point(centerPoint.X - Consts.TargetSize/2, centerPoint.Y - Consts.TargetSize/2);
+            return new Point(centerPoint.X - Consts.TargetDiameter/2, centerPoint.Y - Consts.TargetDiameter/2);
         }
 
         /// <summary>

@@ -31,7 +31,7 @@ namespace BucketGame
         /// <summary>
         /// The height (in pixels) of a frame sent by the Kinect sensor.
         /// </summary>
-        public static readonly int FrameHeight = 640;
+        public static readonly int FrameHeight = 480;
 
 
         /// <summary>
@@ -114,6 +114,11 @@ namespace BucketGame
         /// <summary>
         /// The size of the targets (across)
         /// </summary>
-        public static readonly  int  TargetSize = 100;
+        public static readonly  int  TargetDiameter = 200;
+
+        /// <summary>
+        /// The size of the image object, across
+        /// </summary>
+        public static readonly int ObjectDiameter = 100;
     }
 }
