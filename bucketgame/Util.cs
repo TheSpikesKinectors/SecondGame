@@ -251,5 +251,10 @@ namespace BucketGame
             mediaPlayer.Open((new Uri(relativePath, UriKind.Relative)));
             //if doesn't work, try adding @ before relativePath in this line ^
         }
+
+        public static void SetNearMode(this KinectSensor sensor, bool nearMode)
+        {
+            sensor.DepthStream.Range = nearMode ? DepthRange.Near : DepthRange.Default;
+        }
     }
 }

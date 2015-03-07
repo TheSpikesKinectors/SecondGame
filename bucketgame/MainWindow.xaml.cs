@@ -97,6 +97,9 @@ namespace BucketGame
             statusWindow = new Status();
             statusWindow.Show();
             statusWindow.checkboxShowOnlyWantedTarget.Checked += checkboxShowOnlyWantedTarget_Checked;
+            statusWindow.checkboxShowOnlyWantedTarget.Unchecked += checkboxShowOnlyWantedTarget_Checked;
+            statusWindow.checkboxNearMode.Checked += (e, o) => sensor.SetNearMode(true);
+            statusWindow.checkboxNearMode.Checked += (e, o) => sensor.SetNearMode(false);
 
 
             //KinectSensor.KinectSensors is an array with sensor objects, with null where there is none.
