@@ -96,6 +96,8 @@ namespace BucketGame
             InitializeComponent();
             statusWindow = new Status();
             statusWindow.Show();
+            statusWindow.checkboxShowOnlyWantedTarget.Checked += checkboxShowOnlyWantedTarget_Checked;
+
 
             //KinectSensor.KinectSensors is an array with sensor objects, with null where there is none.
             //from this array, choose the first that is not null. if there is none, choose null.
@@ -156,6 +158,36 @@ namespace BucketGame
             sensor.Start();
         }
 
+        void checkboxShowOnlyWantedTarget_Checked(object sender, RoutedEventArgs e)
+        {
+            ChangedShowAllTargets();
+        }
+
+        public void ChangedShowAllTargets()
+        {
+            bool? hideOtherTargets = statusWindow.checkboxShowOnlyWantedTarget.IsChecked;
+            if (hideOtherTargets != null && (bool)hideOtherTargets) //should hide other targets
+            {
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (targets[i] == currentTarget)
+                    {
+                        targets[i].Visibility = System.Windows.Visibility.Visible;
+                    }
+                    else
+                    {
+                        targets[i].Visibility = System.Windows.Visibility.Hidden;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    targets[i].Visibility = System.Windows.Visibility.Visible;
+                }
+            }
+        }
 
 
        
@@ -334,6 +366,8 @@ namespace BucketGame
 
             //set the currentTarget
             currentTarget = targets[current]; //current-target-target-current. does this count as a palindrome?
+
+            ChangedShowAllTargets();
 
             //Move the imageObejct to this point
             imageObject.MoveTo(p);

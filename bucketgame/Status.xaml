@@ -1,12 +1,13 @@
 ﻿<Window x:Class="BucketGame.Status"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Status" Height="442.448" Width="350.209">
-    <Grid Margin="0,0,-21,-20">
+        Title="Status" Height="594.687" Width="445.731">
+    <Grid  >
         <Label Content="Time: 00:00.00" x:Name="LabelTime" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="264"/>
         <Label Content="Score: 0" x:Name="LabelScore" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,63,0,0" VerticalAlignment="Top" Width="264"/>
-        <Label Content="" x:Name="LabelNothing" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,369,0,0" VerticalAlignment="Top" Width="328"/>
+        <Label Content="" x:Name="LabelNothing" Foreground="Gray" HorizontalAlignment="Left" FontSize="30" Height="53" Margin="10,353,0,0" VerticalAlignment="Top" Width="328"/>
         <Label Content="Use " x:Name="LabelJoint" HorizontalAlignment="Left" FontSize="50" Foreground="Red" Height="78" Margin="10,121,0,0" VerticalAlignment="Top" Width="328"/>
+        <CheckBox x:FieldModifier="public" x:Name="checkboxShowOnlyWantedTarget"  FontSize="30" Content="הצג רק את המטרה הרצויה" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top" Height="46" Width="418"/>
 
     </Grid>
 </Window>
